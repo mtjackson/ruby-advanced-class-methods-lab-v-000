@@ -20,7 +20,7 @@ class Song
     @name = self.new
     @@all << @name
     return @name
-    # @@all.detect{|person| person.name == name}
+    # @@all.detect{|song| song.name == name}
 
   end
 
