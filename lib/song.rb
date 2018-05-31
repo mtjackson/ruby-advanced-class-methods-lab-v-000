@@ -10,13 +10,13 @@ class Song
     self.class.all << self
   end
 
-  def Song.create
+  def self.create
     @song = self.new
     @@all << @song
     return @song
   end
 
-  def Song.new_by_name(name)
+  def self.new_by_name(name)
     @song = self.new
     @song.name = name
     #@@all << @song
