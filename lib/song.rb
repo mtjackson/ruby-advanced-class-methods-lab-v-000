@@ -21,8 +21,6 @@ class Song
     @song.name = name
     @@all << @song
     return @song
-    #@@all.detect{|song| song.name == name}
-
   end
 
   def self.create_by_name
