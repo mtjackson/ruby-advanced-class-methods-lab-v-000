@@ -17,7 +17,7 @@ class Song
   end
 
   def Song.new_by_name(name)
-    @name = self.new
+    @song = self.new
     @@all << @name
     #return @name
     @@all.detect{|song| song.name == name}
