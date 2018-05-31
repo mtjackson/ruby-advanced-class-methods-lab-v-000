@@ -18,7 +18,7 @@ class Song
 
   def Song.new_by_name(name)
     @name = name
-    @@all << @name
+    @@all << self
     return @name
   end
 
