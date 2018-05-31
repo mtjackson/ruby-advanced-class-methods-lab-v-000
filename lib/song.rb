@@ -27,7 +27,7 @@ class Song
     @song = self.new
     @song.name = name
     @@all << @song
-    return @@all[@song]
+    return @song
   end
 
   def self.find_by_name
