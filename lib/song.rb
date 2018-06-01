@@ -62,14 +62,12 @@ class Song
 
   def self.create_from_filename(file_name)
     song = self.new
-    song.name = file_name.split(".")[0]
+    name_and_artist = file_name.split(" - ")
+    name = name_and_artist[1].chomp(".mp3").join
+    artist_name = name_and_artist[0].join
+    song.name = name
+    song.artist_name = artist_name
     song.save
-    #@@all << song
-    return song
-    #song = self.new
-    #song.name = name
-    #@@all << song
-    #return song
   end
 
   def self.destroy_all
