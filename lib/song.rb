@@ -53,7 +53,7 @@ class Song
 
   def self.new_from_filename(file_name)
     name_and_artist = file_name.split(" - ")
-    name_and_artist[2].delete
+    name_and_artist[1].chomp(".mp3")
     @artist = name_and_artist[0].join
     @name = name_and_artist[1].join
     @@all << @name
