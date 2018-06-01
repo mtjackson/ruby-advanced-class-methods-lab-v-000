@@ -58,7 +58,6 @@ class Song
     artist_name = name_and_artist[0].join
     song.name = name
     song.artist_name = artist_name
-    song.save
   end
 
   def self.create_from_filename(file_name)
