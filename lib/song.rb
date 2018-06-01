@@ -52,7 +52,13 @@ class Song
   def self.new_from_filename
   end
 
-  def self.create_from_filename
+  def self.create_from_filename(filename)
+    song = self.new
+
+    #song = self.new
+    #song.name = name
+    #@@all << song
+    #return song
   end
 
   def self.destroy_all
