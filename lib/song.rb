@@ -56,7 +56,7 @@ class Song
     @name = name_and_artist[1].chomp(".mp3")
     @artist = name_and_artist[0]
     #@name = name_and_artist[1].join
-    self.save
+    song.save
   end
 
   def self.create_from_filename(file_name)
