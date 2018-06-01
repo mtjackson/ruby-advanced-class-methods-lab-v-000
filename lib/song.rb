@@ -54,6 +54,7 @@ class Song
     name_and_artist[2].delete
     @artist = name_and_artist[0].join
     @name = name_and_artist[1].join
+    @@all << @name
 
   end
 
