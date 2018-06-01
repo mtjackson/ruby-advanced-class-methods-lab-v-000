@@ -55,7 +55,7 @@ class Song
     name_and_artist = file_name.split(" - ")
     song.name = name_and_artist[1].chomp(".mp3")
     song.artist = name_and_artist[0]
-    @name = name_and_artist[1].join
+    #@name = name_and_artist[1].join
     song.save
   end
 
